@@ -1,5 +1,9 @@
 # Caret Pos
 
+# Version 2.1.0 - 2024-06-19
+- add fix to correctly calculate textarea with overflow / scroll
+- add updated demo to readme
+
 # Version 2.0.0 - 2020-06-02
 - Renamed UMD module from `caret-pos` to `caretPos`
 - Updated packages

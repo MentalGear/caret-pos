@@ -42,6 +42,17 @@ const inputEventHandler = () => {
   setIndicators(off, pos);
 };
 
+const inputTextEventHandler = () => {
+  const pos = position(inputText);
+  const off = offset(inputText);
+  output('inputText', pos, off);
+  setIndicators(off, pos);
+};
+
+const inputText = document.getElementById('inputText');
+inputText.addEventListener('mouseup', inputTextEventHandler);
+inputText.addEventListener('keyup', inputTextEventHandler);
+
 const input = document.getElementById('input');
 input.addEventListener('mouseup', inputEventHandler);
 input.addEventListener('keyup', inputEventHandler);

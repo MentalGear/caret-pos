@@ -9,14 +9,26 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <h2>TextInput</h2>
+  <input type="text" id="inputText">
+
   <h2>Textarea</h2>
   <textarea id="input" class="editor">
-
+    1st Item: Check offset
+    2nd Item: Scroll this to top, then click and check offset
 
 
                       One by one the penguins steal my sanity...
 
+    Scrollable Textarea and keeps correct absolute offset:
+    Click the 1st line when scrolled on top
+    Click the 2nd line when scrolled on top
+    -> gives ~ same offset
+
+
+    ----
   </textarea>
+
   <h2>ContentEditable</h2>
   <div id="editable" class="editor" contentEditable="true">
 Hello, some <b>bold</b> and <i>italic</i> and <b><i>bold</i></b> text

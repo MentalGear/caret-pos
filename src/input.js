@@ -42,9 +42,21 @@ const createInputCaret = (element, ctx) => {
     const rect = elementOffset(element);
     const position = getPosition(pos);
 
+    let top = rect.top + position.top + ctx.document.body.scrollTop;
+    let left = rect.left + position.left + ctx.document.body.scrollLeft;
+
+    // compensate if textarea is scrolled
+    if (element.tagName === 'TEXTAREA') {
+      // console.log('before, top, left', top, left);
+      top -= element.scrollTop || 0;
+      left -= element.scrollLeft || 0;
+      // console.log('after, top, left', top, left);
+
+    }
+
     return {
-      top: rect.top + position.top + ctx.document.body.scrollTop,
-      left: rect.left + position.left + ctx.document.body.scrollLeft,
+      top,
+      left,
       height: position.height,
     };
   };
