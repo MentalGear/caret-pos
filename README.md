@@ -3,7 +3,7 @@
 
 # Caret Position
 
-[Live Demo: Try it out](./index.html)
+[Live Demo: Try it out](https://mentalgear.github.io/caret-pos/demo/demo.html)
 
 Get the position/offset of the caret/cursor from a textarea, contentedtiable, or an iframe body.
 

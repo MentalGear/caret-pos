@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #F1F1F1;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  color: #222222;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Exo', sans-serif;
+}
+
+textarea {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.editor {
+  overflow: auto;
+  height: 160px;
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  padding: 5px 8px;
+  outline: 0 none;
+  margin: 10px 0;
+  background: white;
+}
+
+iframe.editor {
+  padding: 0;
+}
+
+.editor:focus {
+  border: 1px solid #5ABBF6;
+}
+
+.offset-y-line, .offset-x-line {
+  position: absolute;
+  z-index: 999;
+  opacity: 0.8;
+}
+
+.offset-y-line {
+  border-left: 1px dashed magenta;
+  height: 100%;
+  top: 0;
+  left: -1px;
+}
+
+.offset-x-line {
+  border-bottom: 1px dashed cyan;
+  width: 100%;
+  top: -1px;
+  left: 0;
+}
+
+.indicators {
+  position: absolute;
+  background: #000;
+  opacity: 0.75;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  color: #fff;
+  padding: 5px;
+  margin-top: 2px;
+}
+
+.indicators > .offset-indicator {
+  z-index: 999;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+.indicators > .position-indicator {
+  bottom: -50px;
+  padding: 0 3px;
+  border-radius: 3px;
+}
