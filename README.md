@@ -86,3 +86,11 @@ import { offset } from 'caret-data';
 
 offset(el, { customPos: 2 });
 ```
+
+### Development
+
+You might have to `npm i --force` as there's some issue with some ancient babel package compatibilities.
+
+Notice that `npm run start` is broken due to, probably, an old/uncompatible babel version. However, `npm build` works in building the compiled version.
+
+If you can fix the packages issue feel free to add a PR.
