@@ -1,7 +1,7 @@
 {
-  "name": "caret-pos",
-  "version": "2.0.0",
-  "description": "Locate the current position of the caret. A plain JavaScript version of Caret.js.",
+  "name": "caret-position",
+  "version": "2.0.1",
+  "description": "Get Caret positions in textarea, input & contenteditable. Updated fork of caret-pos, which itself is a plain JavaScript version of Caret.js.",
   "main": "lib/bundle/main.min.js",
   "module": "lib/esm2015/main.js",
   "typings": "index.d.ts",
@@ -18,7 +18,10 @@
     "caret",
     "cursor",
     "position",
-    "offset"
+    "offset",
+    "textarea",
+    "input",
+    "contenteditable"
   ],
   "files": [
     "lib",
@@ -29,10 +32,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/deshiknaves/caret-pos"
+    "url": "https://github.com/mentalgear/caret-pos"
   },
-  "author": "Deshiknaves <nawal.rahim@gmail.com> (https://github.com/deshiknaves/)",
+  "author": "Mentalgear (https://github.com/mentalgear/)",
   "contributors": [
+    "Deshiknaves <nawal.rahim@gmail.com> (https://github.com/deshiknaves/)",
     "Aram Drevekenin <grimsniffer@gmail.com>  (https://github.com/imsnif/)"
   ],
   "license": "MIT",

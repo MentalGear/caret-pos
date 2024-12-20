@@ -19,11 +19,12 @@ Caret-Pos is a port of ichord's [Caret.js](https://github.com/ichord/Caret.js). 
 
 Thanks to ichord for all his hard work.
 
+
 ## Usage
-Simply import `position` and/or `offset` from `caret-pos`.
+Simply import `position` and/or `offset` from `caret-position`.
 
 ```javascript
-import { position, offset } from 'caret-pos';
+import { position, offset } from 'caret-position';
 ```
 
 ### Get
@@ -56,7 +57,7 @@ const off = offset(body, { iframe: frame });
 You may also need to get the offset of the iframe to position things correctly. For this there is utility that you can use to get the offset.
 
 ```javascript
-import { getOffset } from 'caret-pos';
+import { getOffset } from 'caret-position';
 
 const frameOffset = getOffset(frame);
   off.left += frameOffset.left;
@@ -68,7 +69,7 @@ When getting the offset, in certain cases a "shadow caret" is temporarily create
 If one does not wish to mutate the DOM in this way, one can include the `noShadowCaret` option in the offset:
 
 ```javascript
-import { offset } from 'caret-pos';
+import { offset } from 'caret-position';
 
 offset(el, { noShadowCaret: true });
 ```
@@ -81,7 +82,7 @@ This will not change the position, but calculate the offset from the custom posi
 This works for both contentEditable and textarea.
 
 ```javascript
-import { offset } from 'caret-pos';
+import { offset } from 'caret-position';
 
 offset(el, { customPos: 2 });
 ```
