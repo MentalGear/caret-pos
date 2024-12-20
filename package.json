@@ -1,7 +1,7 @@
 {
-  "name": "caret-position",
+  "name": "caret-data",
   "version": "2.0.1",
-  "description": "Get Caret positions in textarea, input & contenteditable. Updated fork of caret-pos, which itself is a plain JavaScript version of Caret.js.",
+  "description": "Get the caret's position in textarea, input & contenteditable (even iframe). Updated fork of caret-pos, which itself is a plain JavaScript version of Caret.js.",
   "main": "lib/bundle/main.min.js",
   "module": "lib/esm2015/main.js",
   "typings": "index.d.ts",
@@ -21,7 +21,8 @@
     "offset",
     "textarea",
     "input",
-    "contenteditable"
+    "contenteditable",
+    "iframe"
   ],
   "files": [
     "lib",

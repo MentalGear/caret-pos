@@ -1,11 +1,11 @@
 <!-- [![Build Status](https://travis-ci.org/deshiknaves/caret-pos.svg?branch=master)](https://travis-ci.org/deshiknaves/caret-pos) -->
 
 
-# Caret Position
+# Caret Data
 
 [Live Demo: Try it out](https://mentalgear.github.io/caret-pos/demo/demo.html)
 
-Get the position/offset of the caret/cursor from a textarea, contentedtiable, or an iframe body.
+Get the position/offset/height of the caret/cursor from a textarea, contentedtiable, normal input, even in an iframe body.
 
 The reason for the iframe is that WYSIWYG editors are often inside of one.
 
@@ -21,10 +21,10 @@ Thanks to ichord for all his hard work.
 
 
 ## Usage
-Simply import `position` and/or `offset` from `caret-position`.
+Simply import `position` and/or `offset` from `caret-data`.
 
 ```javascript
-import { position, offset } from 'caret-position';
+import { position, offset } from 'caret-data';
 ```
 
 ### Get
@@ -57,7 +57,7 @@ const off = offset(body, { iframe: frame });
 You may also need to get the offset of the iframe to position things correctly. For this there is utility that you can use to get the offset.
 
 ```javascript
-import { getOffset } from 'caret-position';
+import { getOffset } from 'caret-data';
 
 const frameOffset = getOffset(frame);
   off.left += frameOffset.left;
@@ -69,7 +69,7 @@ When getting the offset, in certain cases a "shadow caret" is temporarily create
 If one does not wish to mutate the DOM in this way, one can include the `noShadowCaret` option in the offset:
 
 ```javascript
-import { offset } from 'caret-position';
+import { offset } from 'caret-data';
 
 offset(el, { noShadowCaret: true });
 ```
@@ -82,7 +82,7 @@ This will not change the position, but calculate the offset from the custom posi
 This works for both contentEditable and textarea.
 
 ```javascript
-import { offset } from 'caret-position';
+import { offset } from 'caret-data';
 
 offset(el, { customPos: 2 });
 ```
